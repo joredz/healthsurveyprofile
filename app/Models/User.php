@@ -6,6 +6,7 @@ namespace App\Models;
 
 use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use Laravel\Fortify\TwoFactorAuthenticatable;
@@ -65,5 +66,25 @@ class User extends Authenticatable implements MustVerifyEmail
             'email_verified_at' => 'datetime',
             'password' => 'hashed',
         ];
+    }
+
+    public function bahay(): HasMany {
+        return $this->hasMany(Bahay::class, 'user_id', 'id');
+    }
+
+    public function tempFamilyMembers(): HasMany {
+        return $this->hasMany(TempFamilyMembers::class, 'user_id', 'id');
+    }
+
+    public function lote(): HasMany {
+        return $this->hasMany(Lote::class, 'user_id', 'id');
+    }
+
+    public function uriNgBahay(): HasMany {
+        return $this->hasMany(UriBahay::class, 'user_id', 'id');
+    }
+
+    public function paninirahan(): HasMany {
+        return $this->hasMany(Paninirahan::class, 'user_id', 'id');
     }
 }

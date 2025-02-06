@@ -15,6 +15,10 @@
                     <x-nav-link href="{{ route('dashboard') }}" :active="request()->routeIs('dashboard')">
                         {{ __('Dashboard') }}
                     </x-nav-link>
+                    <x-nav-link href="{{ route('hsf') }}" :active="request()->routeIs('hsf')">
+                        {{ __('Health Survey Form') }}
+                    </x-nav-link>
+                    
                 </div>
             </div>
 
@@ -101,6 +105,36 @@
                             <x-dropdown-link href="{{ route('profile.show') }}">
                                 {{ __('Profile') }}
                             </x-dropdown-link>
+                            <x-dropdown-link href="{{ route('lob') }}">
+                                {{ __('List of Barangay') }}
+                            </x-dropdown-link>
+                            <x-dropdown-link href="{{ route('lopss') }}">
+                                {{ __('List of Purok/Sitio/Sona') }}
+                            </x-dropdown-link>
+                            <x-dropdown-link href="{{ route('bahay') }}">
+                                {{ __('List of Bahay') }}
+                            </x-dropdown-link>
+                            <x-dropdown-link href="{{ route('est') }}">
+                                {{ __('List of Establishment') }}
+                            </x-dropdown-link>
+                            <x-dropdown-link href="{{ route('livelihood') }}">
+                                {{ __('List of Livelihood') }}
+                            </x-dropdown-link>
+                            <x-dropdown-link href="{{ route('lot') }}">
+                                {{ __('List of Lot') }}
+                            </x-dropdown-link>
+                            <x-dropdown-link href="{{ route('paninirahan') }}">
+                                {{ __('List of Paninirahan') }}
+                            </x-dropdown-link>
+                            <x-dropdown-link href="{{ route('religion') }}">
+                                {{ __('List of Religion') }}
+                            </x-dropdown-link>
+                            <x-dropdown-link href="{{ route('type-of-house') }}">
+                                {{ __('List of Type of House') }}
+                            </x-dropdown-link>
+                            <x-dropdown-link href="{{ route('refilling-station') }}">
+                                {{ __('List of Refilling Station') }}
+                            </x-dropdown-link>
 
                             @if (Laravel\Jetstream\Jetstream::hasApiFeatures())
                                 <x-dropdown-link href="{{ route('api-tokens.index') }}">
@@ -142,6 +176,9 @@
             <x-responsive-nav-link href="{{ route('dashboard') }}" :active="request()->routeIs('dashboard')">
                 {{ __('Dashboard') }}
             </x-responsive-nav-link>
+            <x-responsive-nav-link href="{{ route('hsf') }}" :active="request()->routeIs('hsf')">
+                {{ __('Health Survey Form') }}
+            </x-responsive-nav-link>
         </div>
 
         <!-- Responsive Settings Options -->
@@ -163,6 +200,36 @@
                 <!-- Account Management -->
                 <x-responsive-nav-link href="{{ route('profile.show') }}" :active="request()->routeIs('profile.show')">
                     {{ __('Profile') }}
+                </x-responsive-nav-link>
+                <x-responsive-nav-link href="{{ route('lob') }}">
+                    {{ __('List of Barangay') }}
+                </x-responsive-nav-link>
+                <x-responsive-nav-link href="{{ route('lopss') }}">
+                    {{ __('List of Purok/Sitio/Sona') }}
+                </x-responsive-nav-link>
+                <x-responsive-nav-link href="{{ route('bahay') }}">
+                    {{ __('List of Bahay') }}
+                </x-responsive-nav-link>
+                <x-responsive-nav-link href="{{ route('est') }}">
+                    {{ __('List of Establishment') }}
+                </x-responsive-nav-link>
+                <x-responsive-nav-link href="{{ route('livelihood') }}">
+                    {{ __('List of Livelihood') }}
+                </x-responsive-nav-link>
+                <x-responsive-nav-link href="{{ route('lot') }}">
+                    {{ __('List of Lot') }}
+                </x-responsive-nav-link>
+                <x-responsive-nav-link href="{{ route('paninirahan') }}">
+                    {{ __('List of Paninirahan') }}
+                </x-responsive-nav-link>
+                <x-responsive-nav-link href="{{ route('religion') }}">
+                    {{ __('List of Religion') }}
+                </x-responsive-nav-link>
+                <x-responsive-nav-link href="{{ route('type-of-house') }}">
+                    {{ __('List of Type of House') }}
+                </x-responsive-nav-link>
+                <x-responsive-nav-link href="{{ route('refilling-station') }}">
+                    {{ __('List of Refilling Station') }}
                 </x-responsive-nav-link>
 
                 @if (Laravel\Jetstream\Jetstream::hasApiFeatures())
