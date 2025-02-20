@@ -4,6 +4,7 @@
             <label for="family_planning" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Ginagamit sa Family Planning?</label>
             <select wire:model.lazy="family_planning" id="family_planning" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
                 <option value=""></option>
+                <option value="0">None</option>
                 <option value="1">Pills</option>
                 <option value="2">DMPA</option>
                 <option value="3">LAM</option>
@@ -21,6 +22,7 @@
             <label for="asin" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Asin</label>
             <select wire:model.lazy="asin" id="asin" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
                 <option value=""></option>
+                <option value="0">None</option>
                 <option value="1">Ordinaryo</option>
                 <option value="2">Iodized Salt</option>
             </select>
@@ -41,6 +43,7 @@
             <label for="gumagamit_gamot" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Gumagamit ba ng halamang gamot?</label>
             <select wire:model.lazy="gumagamit_gamot" id="gumagamit_gamot" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
                 <option value=""></option>
+                <option value="0">None</option>
                 <option value="1">Oo</option>
                 <option value="2">Hindi</option>
             </select>
@@ -49,6 +52,7 @@
             <label for="may_kuryente" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">May kuryente ba ang inyong bahay?</label>
             <select wire:model.lazy="may_kuryente" id="may_kuryente" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
                 <option value=""></option>
+                <option value="0">None</option>
                 <option value="1">Meron</option>
                 <option value="2">Wala</option>
             </select>
@@ -84,6 +88,7 @@
             <label for="phil_category" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Philhealh category</label>
             <select wire:model.lazy="phil_category" id="phil_category" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
                 <option value=""></option>
+                <option value="0">None</option>
                 <option value="1">NHTS</option>
                 <option value="2">Senior citizen</option>
                 <option value="3">4p's</option>

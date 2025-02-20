@@ -50,4 +50,7 @@ Route::middleware([
     Route::get('/refilling-station', function () {
         return view('pages.refilling-station');
     })->name('refilling-station');
+    Route::get('/hsr', function () {
+        return view('pages.hsr');
+    })->name('hsr');
 });

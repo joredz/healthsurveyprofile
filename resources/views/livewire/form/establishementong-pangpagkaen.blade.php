@@ -4,6 +4,7 @@
             <label for="est_pangpagkaen" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">May establishementong pangpagkaen?</label>
             <select wire:model.lazy="est_pangpagkaen" id="est_pangpagkaen" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
                 <option value=""></option>
+                <option value="0">None</option>
                 <option value="1">Meron</option>
                 <option value="2">Wala</option>
             </select>
@@ -15,6 +16,7 @@
             <label for="anong_klase" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Anong klase?</label>
             <select wire:model.lazy="anong_klase" id="anong_klase" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
                 <option value=""></option>
+                <option value="0">None</option>
                 @foreach ($lists as $list)
                     <option value="{{$list->id}}">{{$list->name}}</option>
                 @endforeach

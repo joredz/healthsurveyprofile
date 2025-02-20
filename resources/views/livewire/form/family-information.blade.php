@@ -24,6 +24,7 @@
             <label for="relihiyon" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Relihiyon</label>
             <select id="relihiyon" wire:model.lazy="relihiyon" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
                 <option value=""></option>
+                <option value="0">None</option>
                 @foreach($religions as $religion)
                     <option value="{{$religion->id}}">{{$religion->name}}</option>
                 @endforeach
@@ -42,6 +43,7 @@
             <label for="civil_status" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Civil status</label>
             <select id="civil_status" wire:model.lazy="civil_status" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
                 <option value=""></option>
+                <option value="0">None</option>
                 <option value="Single">Single</option>
                 <option value="Married">Married</option>
                 <option value="Widow">Widow</option>
@@ -138,6 +140,7 @@
             <label for="bahay" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Bahay</label>
             <select type="text" wire:model.lazy="bahay" id="bahay" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" >
                 <option value=""></option>
+                <option value="0">None</option>
                 @foreach(auth()->user()->bahay as $bahay)
                     <option value="{{$bahay->id}}">{{$bahay->name}}</option>
                 @endforeach
@@ -147,6 +150,7 @@
             <label for="lote" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Lote</label>
             <select type="text" wire:model.lazy="lote" id="lote" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" >
                 <option value=""></option>
+                <option value="0">None</option>
                 @foreach(auth()->user()->lote as $lote)
                     <option value="{{$lote->id}}">{{$lote->name}}</option>
                 @endforeach
@@ -156,6 +160,7 @@
             <label for="uri" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Kayarian ng bahay</label>
             <select type="text" wire:model.lazy="uri" id="uri" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" >
                 <option value=""></option>
+                <option value="0">None</option>
                 @foreach(auth()->user()->uriNgBahay as $uri)
                     <option value="{{$uri->id}}">{{$uri->name}}</option>
                 @endforeach
@@ -165,6 +170,7 @@
             <label for="paninirahan" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Tagal ng paninirahan</label>
             <select type="text" wire:model.lazy="paninirahan" id="paninirahan" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" >
                 <option value=""></option>
+                <option value="0">None</option>
                 @foreach(auth()->user()->paninirahan as $paninirahan)
                     <option value="{{$paninirahan->id}}">{{$paninirahan->name}}</option>
                 @endforeach

@@ -4,6 +4,7 @@
             <label for="water_source" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Kinukunan ng tubig?</label>
             <select wire:model.lazy="water_source" id="water_source" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
                 <option value=""></option>
+                <option value="0">None</option>
                 <option value="1">Level I ( Poso, Spring box )</option>
                 <option value="2">Level II ( Spring, Deep well )</option>
                 <option value="3">Level III ( Water District )</option>
@@ -18,6 +19,7 @@
                         <label for="one_klase" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Choose one..</label>
                         <select wire:model.lazy="one_klase" id="one_klase" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
                             <option value=""></option>
+                            <option value="0">None</option>
                             <option value="1">Poso</option>
                             <option value="2">Spring box na may isang gripo</option>
                         </select>
@@ -26,6 +28,7 @@
                         <label for="one_type" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Ito ba'y?</label>
                         <select wire:model.lazy="one_type" id="one_type" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
                             <option value=""></option>
+                            <option value="0">None</option>
                             <option value="1">Public</option>
                             <option value="2">Private</option>
                         </select>
@@ -41,6 +44,7 @@
                         <label for="two_klase" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Choose one..</label>
                         <select wire:model.lazy="two_klase" id="two_klase" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
                             <option value=""></option>
+                            <option value="0">None</option>
                             <option value="1">Brgy. Water System (source: Spring)</option>
                             <option value="2">Brgy. Water System (source: Deep well)</option>
                         </select>
@@ -49,6 +53,7 @@
                         <label for="two_type" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Ito ba'y?</label>
                         <select wire:model.lazy="two_type" id="two_type" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
                             <option value=""></option>
+                            <option value="0">None</option>
                             <option value="1">Public</option>
                             <option value="2">Private</option>
                         </select>
@@ -67,6 +72,7 @@
                         <label for="refilling_station" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Choose one..</label>
                         <select wire:model.lazy="refilling_station" id="refilling_station" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
                             <option value=""></option>
+                            <option value="0">None</option>
                             @foreach ($stations as $station)
                                 <option value="{{$station->id}}">{{$station->name}}</option>
                             @endforeach
@@ -84,6 +90,7 @@
                         <label for="doubtful_source" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Choose one..</label>
                         <select wire:model.lazy="doubtful_source" id="doubtful_source" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
                             <option value=""></option>
+                            <option value="0">None</option>
                             <option value="1">Open Well / Balon</option>
                             <option value="2">Bukal / Salulo</option>
                             <option value="3">Ilog</option>
@@ -94,6 +101,7 @@
                         <label for="doubtful_type" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Ito ba'y?</label>
                         <select wire:model.lazy="doubtful_type" id="doubtful_type" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
                             <option value=""></option>
+                            <option value="0">None</option>
                             <option value="1">Public</option>
                             <option value="2">Private</option>
                         </select>

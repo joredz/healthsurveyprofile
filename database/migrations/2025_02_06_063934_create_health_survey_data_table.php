@@ -19,7 +19,7 @@ return new class extends Migration
             $table->string('bilang_ng_bahay');
             $table->string('tirahan');
             $table->integer('bilang_ng_miyembro');
-            $table->string('ulo_ng_pamilya');
+            $table->string('ulo_ng_pamilya')->nullable();
             $table->string('asawa')->nullable();
             $table->bigInteger('religion_id');
             $table->bigInteger('other_religion_id')->nullable();
