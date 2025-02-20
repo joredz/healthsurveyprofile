@@ -52,6 +52,7 @@ class HealthSurveyData extends Model
         'anong_klase',
         'other_klase',
         'family_planning',
+        'family_planning_saan',
         'asin',
         'alagang_hayop',
         'mga_tanim',

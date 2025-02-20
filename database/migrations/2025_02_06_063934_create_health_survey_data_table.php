@@ -58,6 +58,7 @@ return new class extends Migration
             $table->integer('anong_klase')->nullable();
             $table->string('other_klase')->nullable();
             $table->integer('family_planning');
+            $table->integer('family_planning_saan');
             $table->integer('asin');
             $table->integer('alagang_hayop');
             $table->string('mga_tanim');

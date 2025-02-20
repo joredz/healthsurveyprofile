@@ -8,6 +8,7 @@ use Livewire\Component;
 class Others extends Component
 {
     public $family_planning;
+    public $family_planning_saan;
     public $asin;
     public $alagang_hayop;
     public $mga_tanim;
@@ -25,6 +26,10 @@ class Others extends Component
     public function updatedFamilyPlanning($value) {
         $save = new FamilyInformation();
         $save->saveTemp("family_planning", ($value != "") ? $value : null);
+    }
+    public function updatedFamilyPlanningSaan($value) {
+        $save = new FamilyInformation();
+        $save->saveTemp("family_planning_saan", ($value != "") ? $value : null);
     }
     public function updatedAsin($value) {
         $save = new FamilyInformation();
@@ -85,6 +90,7 @@ class Others extends Component
         if($exists->exists()) {
             $data = $exists->first();
             $this->family_planning = $data->family_planning;
+            $this->family_planning_saan = $data->family_planning_saan;
             $this->asin = $data->asin;
             $this->alagang_hayop = $data->alagang_hayop;
             $this->mga_tanim = $data->mga_tanim;
