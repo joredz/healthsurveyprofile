@@ -87,7 +87,7 @@ class Others extends Component
     public function render()
     {
         $exists = TempData::where('user_id', auth()->user()->id);
-        if($exists->exists()) {
+        if( $exists->exists() ) {
             $data = $exists->first();
             $this->family_planning = $data->family_planning;
             $this->family_planning_saan = $data->family_planning_saan;
