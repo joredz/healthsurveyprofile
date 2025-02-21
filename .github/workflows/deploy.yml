@@ -39,7 +39,7 @@ jobs:
           SOURCE: "."
           REMOTE_HOST: ${{ secrets.VPS_HOST }}
           REMOTE_USER: ${{ secrets.VPS_USER }}
-          TARGET: "~/code"
+          TARGET: "/home/hsp/code"
 
       - name: Run Remote/Artisan Commands
         uses: appleboy/ssh-action@v0.1.6
@@ -48,6 +48,6 @@ jobs:
           username: ${{ secrets.VPS_USER }}
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           script: |
-            cd ~/code
+            cd /home/hsp/code
             php artisan migrate --force
             php artisan optimize
