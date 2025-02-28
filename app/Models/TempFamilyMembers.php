@@ -15,7 +15,8 @@ class TempFamilyMembers extends Model
         'education',
         'work',
         'other_information',
-        'user_id'
+        'user_id',
+        'head_of_the_family'
     ];
 
     public function works(): BelongsTo

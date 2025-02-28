@@ -25,8 +25,8 @@
                 <option value="0">None</option>
                 <option value="1">Kinukolekta ng dump truck ng munisipyo</option>
                 <option value="2">Kinukolekta ng dump truck ng barangay</option>
-                <option value="2">Kinukolekta ng segregation cart ng barangay</option>
-                <option value="2">Sariling tapon sa open dumping site</option>
+                <option value="3">Kinukolekta ng segregation cart ng barangay</option>
+                <option value="4">Sariling tapon sa open dumping site</option>
             </select>
         </div>
         <div class="col-span-2">

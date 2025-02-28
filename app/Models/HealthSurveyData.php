@@ -3,6 +3,7 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
 class HealthSurveyData extends Model
 {
@@ -67,4 +68,5 @@ class HealthSurveyData extends Model
         'philhealth_number',
         'phil_category'
     ];
+
 }

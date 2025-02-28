@@ -16,6 +16,7 @@ return new class extends Migration
             $table->string('name')->nullable();
             $table->date('birthdate')->nullable();
             $table->integer('age')->nullable();
+            $table->integer('head_of_the_family')->nullable()->default(0);
             $table->string('sex')->nullable();
             $table->string('education')->nullable();
             $table->string('work')->nullable();

@@ -117,6 +117,15 @@ class FamilyInformation extends Component
                 );
             }
         }
+        if($column == "ulo_ng_pamilya") {
+            $head = TempFamilyMembers::updateOrCreate([
+                'user_id' => auth()->user()->id,
+                'head_of_the_family' => 1
+            ], [
+                'name' => $value,
+            ]);
+        }
+
         TempData::updateOrCreate(
             ['user_id' => auth()->user()->id],
             [$column => $value]

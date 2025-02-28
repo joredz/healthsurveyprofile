@@ -15,7 +15,7 @@
                 <option value="8">Basal Body Temperature</option>
                 <option value="9">Standard Days Method</option>
                 <option value="10">Cervical Mucus M</option>
-                <option value="11">Wala</option>
+                <option value="11">Implant</option>
             </select>
         </div>
         <div>

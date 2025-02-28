@@ -3,6 +3,7 @@
 namespace App\Livewire\Modal;
 
 use App\Models\LivelihoodList;
+use App\Models\TempData;
 use App\Models\TempFamilyMembers;
 use Carbon\Carbon;
 use LivewireUI\Modal\ModalComponent;
@@ -34,6 +35,9 @@ class FamilyMember extends ModalComponent
             $data->work = $this->work;
             $data->other_information = $this->other;
             $data->save();
+            if($data->head_of_the_family == 1){
+                TempData::where('user_id', auth()->user()->id)->update(['ulo_ng_pamilya' => $this->name]);
+            }
             session()->flash('message', 'Updated.');
         } else {
             TempFamilyMembers::create([

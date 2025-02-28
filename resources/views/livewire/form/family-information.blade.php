@@ -109,22 +109,22 @@
                             {{$member->name}}
                         </td>
                         <td class="px-6 py-4">
-                            {{$member->birthdate}}
+                            {{is_null($member->birthdate) ? '' : $member->birthdate}}
                         </td>
                         <td class="px-6 py-4">
-                            {{$member->age}}
+                            {{is_null($member->age) ? '' : $member->age}}
                         </td>
                         <td class="px-6 py-4">
-                            {{$member->sex}}
+                            {{is_null($member->sex) ? '' : $member->sex}}
                         </td>
                         <td class="px-6 py-4">
-                            {{$member->education}}
+                            {{is_null($member->education) ? '' : $member->education}}
                         </td>
                         <td class="px-6 py-4">
-                            {{$member->works->name}}
+                            {{is_null($member->works) ? '' : $member->works->name}}
                         </td>
                         <td class="px-6 py-4">
-                            {{$member->other_information}}
+                            {{is_null($member->other_information) ? '' : $member->other_information}}
                         </td>
                         <td>
                             <a href="#" class="text-blue-600" wire:click="$dispatch('openModal', {component: 'modal.family-member', arguments: {id: {{$member->id}}}})">Edit</a> | <a href="#" class="text-red-600" wire:confirm="Are you sure you want to delete this member?" wire:click="deleteMember({{$member->id}})">Remove</a>
